@@ -37,17 +37,17 @@ function Get-PvpStats {
 
                 switch ($fameValue)
                     {
-                        {($_ -ge 0) -and    ($_ -le 99)}    {$pvpTitle = 'Unranked'}
-                        {($_ -ge 100) -and  ($_ -le 199)}   {$pvpTitle = 'Hunter'}
-                        {($_ -ge 200) -and  ($_ -le 299)}   {$pvpTitle = 'Slayer'}
-                        {($_ -ge 300) -and  ($_ -le 399)}   {$pvpTitle = 'Destroyer'}
-                        {($_ -ge 400) -and  ($_ -le 499)}   {$pvpTitle = 'Champion'}
-                        {($_ -ge 500) -and  ($_ -le 599)}   {$pvpTitle = 'Dreadnaught'}
-                        {($_ -ge 600) -and  ($_ -le 699)}   {$pvpTitle = 'General'}
-                        {($_ -ge 700) -and  ($_ -le 799)}   {$pvpTitle = 'Master'}
-                        {($_ -ge 800) -and  ($_ -le 999)}   {$pvpTitle = 'Overseer'}
-                        {($_ -ge 1000) -and ($_ -le 2999)}  {$pvpTitle = 'Overlord'}
-                        {($_ -ge 3000)}                     {$pvpTitle = 'Warlord'}
+                        {($_ -ge 0)    -and  ($_ -le 99)}    {$pvpTitle = 'Unranked'}
+                        {($_ -ge 100)  -and  ($_ -le 199)}   {$pvpTitle = 'Hunter'}
+                        {($_ -ge 200)  -and  ($_ -le 299)}   {$pvpTitle = 'Slayer'}
+                        {($_ -ge 300)  -and  ($_ -le 399)}   {$pvpTitle = 'Destroyer'}
+                        {($_ -ge 400)  -and  ($_ -le 499)}   {$pvpTitle = 'Champion'}
+                        {($_ -ge 500)  -and  ($_ -le 599)}   {$pvpTitle = 'Dreadnaught'}
+                        {($_ -ge 600)  -and  ($_ -le 699)}   {$pvpTitle = 'General'}
+                        {($_ -ge 700)  -and  ($_ -le 799)}   {$pvpTitle = 'Master'}
+                        {($_ -ge 800)  -and  ($_ -le 999)}   {$pvpTitle = 'Overseer'}
+                        {($_ -ge 1000) -and ($_ -le 2999)}   {$pvpTitle = 'Overlord'}
+                        {($_ -ge 3000)}                      {$pvpTitle = 'Warlord'}
                     }
                 
                 $OutTemp.pvpTitle = $pvpTitle
